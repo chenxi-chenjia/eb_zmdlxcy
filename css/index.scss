@@ -1,0 +1,44 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background:#fff;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+$Hwidth:320px,360px,375px,412px,414px,768px;
+$Swidth:750px;
+@each $i in $Hwidth{
+    @media screen and (min-width:#{$i}){
+        html{
+            font-size:100px * $i / $Swidth;
+        }
+    } 
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.icon{
+    background-image: url(../img/icon.png);
+}
+.container{
+    padding:0 .25rem;
+}
+.slide2{
+    padding:.25rem 0;
+}
+.red{
+    color:#f00909;
+}
+.slide2{
+    .top-title{
+        p{
+            text-align: center;
+            text-indent: 2em;
+            font-size: .24rem;
+        }
+    }
+}
