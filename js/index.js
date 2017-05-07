@@ -1,61 +1,95 @@
+var rc=document.getElementById('red_canvas-box');
+var bc=document.getElementById('blue_canvas-box');
+
+var ca_flag=true;
+
+function begin_canvas(){
+	if(ca_flag){
+		cas(rc,'#f00909',40);
+	}else{
+		cas(bc,'#0090f4',20);
+	}
+	
+}
+function close_canvas(){
+	if(ca_flag){
+		over_cas(bc);
+	}else{
+		over_cas(rc);
+	}
+	
+}
+
+
 var mySwiper = new Swiper('.swiper-container', {
 	autoplay: 0,//可选选项，自动滑动
 	noSwiping:false,
 	direction: 'vertical',
 	pagination: '.swiper-pagination',
     paginationClickable: true,
-    mousewheelControl : true
+    mousewheelControl : true,
+    onSlideChangeStart:function(swiper){
+    	if(swiper.activeIndex==0){
+			var f=$('.swiper-slide').eq(0);
+			f.find('.l_spring').addClass('animate-l_spring').end().find('.r_spring').addClass('animate-r_spring');
+			star.enter_fn();
+    	}else if(swiper.activeIndex==1){
+			$('.swiper-slide').eq(1).find('.transform').addClass('translate_move');
+    	}else if(swiper.activeIndex==2){
+			$('.swiper-slide').eq(2).find('.transform').addClass('translate_move');
+    	}else if(swiper.activeIndex==3){
+			$('.swiper-slide').eq(3).find('.transform').addClass('translate_move');
+			ca_flag=true;
+			setTimeout(begin_canvas,1600);
+			
+    	}else if(swiper.activeIndex==4){
+			$('.swiper-slide').eq(4).find('.transform').addClass('translate_move');
+			ca_flag=false;
+			setTimeout(begin_canvas,1600);
+			
+    	}else if(swiper.activeIndex==5){
+			$('.swiper-slide').eq(5).find('.transform').addClass('translate_move');
+    	}else if(swiper.activeIndex==6){
+			$('.swiper-slide').eq(6).find('.transform').addClass('translate_move');
+    	}
+    },
+    onSlideChangeEnd:function(swiper){
+    	if(swiper.activeIndex!=0){
+			var f=$('.swiper-slide').eq(0);
+			f.find('.animate-l_spring').removeClass('animate-l_spring').end().find('.animate-r_spring').removeClass('animate-r_spring');
+			star.leave_fn();
+    	}
+    	if(swiper.activeIndex!=1){
+			$('.swiper-slide').eq(1).find('.translate_move').removeClass('translate_move');
+    	}
+    	if(swiper.activeIndex!=2){
+			$('.swiper-slide').eq(2).find('.translate_move').removeClass('translate_move');
+    	}
+    	if(swiper.activeIndex!=3){
+			$('.swiper-slide').eq(3).find('.translate_move').removeClass('translate_move');
+			close_canvas();
+    	}
+    	if(swiper.activeIndex!=4){
+			$('.swiper-slide').eq(4).find('.translate_move').removeClass('translate_move');
+			close_canvas();
+    	}
+    	if(swiper.activeIndex!=5){
+			$('.swiper-slide').eq(5).find('.translate_move').removeClass('translate_move');
+    	}
+    	if(swiper.activeIndex!=6){
+			$('.swiper-slide').eq(6).find('.translate_move').removeClass('translate_move');
+    	}
+    }
 })
 
 
 
-//canvas 动画
-function cas(fa,color,percent){
-	var obj=fa.getElementsByTagName('canvas')[0];
-	var wh=obj.clientWidth;
-	obj.width=wh;
-	obj.height=wh;
-	var zb=wh/2;
-	var lw=wh*0.07;
-	var r=wh/2-lw;
-	var ctx=obj.getContext('2d');
-	var num=0;
-	function rc(p){
-		ctx.clearRect(0,0,wh,wh);
-		ctx.save(p);
-		ctx.beginPath();
-		ctx.arc(zb,zb,r,0,Math.PI*2);
-		ctx.lineWidth=lw;
-		ctx.strokeStyle='#f1f1f1';
-		ctx.fillStyle=color;
-		ctx.closePath();
-		ctx.stroke();
 
 
-		var startAngle = Math.PI;
-		var anglePerSec = 2 * Math.PI * p/100;
-		ctx.beginPath();
-		ctx.arc(zb, zb, r, startAngle, startAngle + anglePerSec, false)
-		ctx.strokeStyle = color;
-		ctx.lineCap='round';
-		ctx.stroke();
-		ctx.closePath();
 
 
-	}
-	var t=setInterval(an,10);
-	function an(){
-		rc(num);
-		var span=fa.getElementsByTagName('span')[0];
-		span.innerHTML=num+'%';
-		if(num>=percent){
-			clearInterval(t);
-		}
-		num++;
-	}
-}
-var rc=document.getElementById('red_canvas-box');
-cas(rc,'#f00909',40);
 
-var bc=document.getElementById('blue_canvas-box');
-cas(bc,'#0090f4',20)
+
+
+
+

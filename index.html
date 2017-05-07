@@ -19,8 +19,12 @@
 	<link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./iconfont/iconfont.css">
-	<script src="./js/swiper-3.4.2.min.js"></script>
+
+	<script src="./js/jquery-1.10.1.min.js"></script>
+	<script src="./js/swiper-3.4.2.jquery.min.js"></script>
+	<link rel="stylesheet" href="./css/animate.css">
 	<link rel="stylesheet" href="./css/index.css">
+
 </head>
 <body>
 
@@ -32,32 +36,34 @@
 			<div class="star-box">
 				<div class="icon icon1"></div>
 			</div>
-			<div class="lster-box">
-				<div id="icon icon2"></div>
+			<div class="lstar-box">
+				<div class="icon icon2"></div>
 			</div>
 			<div class="icon icon3"></div>
 			<div class="icon icon4"></div>
 			<div class="icon icon5"></div>
 			<div class="icon icon6"></div>
 			<div class="icon icon7"></div>
-			<div class="icon icon8"></div>
-			<div class="icon icon9"></div>
-			<div class="icon icon10"></div>
+			<div class="bstar-box">
+				<div class="icon icon8"></div>
+			</div>
+			<div class="icon icon9 l_spring animate-l_spring"></div>
+			<div class="icon icon10 r_spring animate-r_spring"></div>
 			<div class="icon icon11"></div>
 		</div>
 		<div class="swiper-slide slide2">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 ><span><i class="icon icon-h2-left"></i>普通商标申请<i class="icon icon-h2-right"></i></span></h2>
+						<h2 class="l_o_n transform"><span><i class="icon icon-h2-left"></i>普通商标申请<i class="icon icon-h2-right"></i></span></h2>
 					</div>
 					<div class="col-xs-12">
-						<div class="img "><div class="icon R"></div></div>
+						<div class="img l_o_n_d1 transform"><div class="icon R"></div></div>
 					
-						<h3>普通商标申请<span class="red">499元</span></h3>
+						<h3 class="l_o_n_d2 transform">普通商标申请<span class="red">499元</span></h3>
 						<div class="protect-describe protect-describe col-xs-12">
-							<p>用户自助提交</p>
-							<p>1-2个工作日拿到申请号</p>
+							<p class="l_o_n_d3 transform">用户自助提交</p>
+							<p class="l_o_n_d4 transform">1-2个工作日拿到申请号</p>
 						</div>
 					</div>
 				</div>
@@ -67,14 +73,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 ><span><i class="icon icon-h2-left"></i>商标保姆服务<i class="icon icon-h2-right"></i></span></h2>
+						<h2  class="l_o_n transform"><span><i class="icon icon-h2-left"></i>商标保姆服务<i class="icon icon-h2-right"></i></span></h2>
 					</div>
 					<div class="col-xs-12">
-						<div class="img "><div class="icon P"></div></div>
-						<h3>商标保姆服务<span class="red">699元</span></h3>
+						<div class="img l_o_n_d1 transform"><div class="icon P"></div></div>
+						<h3 class="l_o_n_d2 transform">商标保姆服务<span class="red">699元</span></h3>
 						<div class="protect-describe">
-							<p>专属1对1顾问，申请前近似查询，避免风险</p>
-							<p>申报材料整理与填报，官文免费快递送达</p>
+							<p class="l_o_n_d3 transform">专属1对1顾问，申请前近似查询，避免风险</p>
+							<p class="l_o_n_d4 transform">申报材料整理与填报，官文免费快递送达</p>
 						</div>
 					</div>
 				</div>
@@ -83,17 +89,17 @@
 		<div class="swiper-slide slide3">
 			<div class="container">
 				<div class="row">
-					<h2 class="col-xs-12"><span><i class="icon icon-h2-left"></i>代理合作模式<i class="icon icon-h2-right"></i></span></h2>
+					<h2 class="col-xs-12 l_o_n transform"><span><i class="icon icon-h2-left"></i>代理合作模式<i class="icon icon-h2-right"></i></span></h2>
 					<div class="col-xs-12">
-						<h5>为您开通专属提交业务入口的同时可获得至少<span class="red">40%</span>的收益！</h5>
-						<p>使用普通商标注册即时提交至商标局，使用保姆式提交将会有商标服务专家进行一对一服务，避免风险，大幅度减小商标被驳回几率</p>
+						<h5 class="l_o_n_d1 transform">为您开通专属提交业务入口的同时可获得至少<span class="red ">40%</span>的收益！</h5>
+						<p class="l_o_n_d2 transform">使用普通商标注册即时提交至商标局，使用保姆式提交将会有商标服务专家进行一对一服务，避免风险，大幅度减小商标被驳回几率</p>
 						<div class="canvas">
-							<div id="red_canvas-box">
-								<span>25%</span>
+							<div id="red_canvas-box" class="l_o_n_d3 transform">
+								<span>0%</span>
 								<canvas></canvas>
 							</div>
 						</div>
-						<h5 class="img-title">代理合作模式</h5>
+						<h5 class="img-title l_o_n_d4 transform">代理合作模式</h5>
 					</div>
 				</div>
 			</div>
@@ -101,17 +107,17 @@
 		<div class="swiper-slide slide3">
 			<div class="container">
 				<div class="row">
-					<h2 class="col-xs-12"><span><i class="icon icon-h2-left"></i>微伙伴模式<i class="icon icon-h2-right"></i></span></h2>
+					<h2 class="col-xs-12 l_o_n transform"><span><i class="icon icon-h2-left"></i>微伙伴模式<i class="icon icon-h2-right"></i></span></h2>
 					<div class="col-xs-12">
-						<h5><i class="icon"></i>微伙伴使用专属分享链接推广给好友，好友商标订单金额的<span class="red">20%</span>作为收益！</h5>
-						<p>针对“第一商务”全站业务均为有效，包括域名注册，虚拟主机，云服务器，企业邮局等互联网基础服务；一键分享，坐等收益！</p>
+						<h5 class="l_o_n_d1 transform"><i class="icon"></i>微伙伴使用专属分享链接推广给好友，好友商标订单金额的<span class="red">20%</span>作为收益！</h5>
+						<p class="l_o_n_d2 transform">针对“第一商务”全站业务均为有效，包括域名注册，虚拟主机，云服务器，企业邮局等互联网基础服务；一键分享，坐等收益！</p>
 						<div class="canvas">
-							<div id="blue_canvas-box">
-								<span>25%</span>
+							<div id="blue_canvas-box" class="l_o_n_d3 transform">
+								<span>0%</span>
 								<canvas></canvas>
 							</div>
 						</div>
-						<h5 class="img-title">微伙伴模式</h5>
+						<h5 class="img-title l_o_n_d4 transform">微伙伴模式</h5>
 					</div>
 				</div>
 			</div>
@@ -119,22 +125,22 @@
 		<div class="swiper-slide slide4">
 			<div class="container">
 				<div class="row">
-					<h2 class="col-xs-12"><span><i class="icon icon-h2-left"></i>面向群体<i class="icon icon-h2-right"></i></span></h2>
+					<h2 class="col-xs-12 l_o_n transform"><span><i class="icon icon-h2-left"></i>面向群体<i class="icon icon-h2-right"></i></span></h2>
 				</div>
 				<div class="row">
-					<div class="col-xs-6">
+					<div class="col-xs-6 l_o_n_d1 transform">
 						<div class="img"><div class="icon icon1"></div></div>
 						<h5>商标代理人</h5>
 					</div>
-					<div class="col-xs-6">
+					<div class="col-xs-6 r_o_n_d2 transform">
 						<div class="img"><div class="icon icon2"></div></div>
 						<h5>网络公司</h5>
 					</div>
-					<div class="col-xs-6">
+					<div class="col-xs-6 l_o_n_d3 transform">
 						<div class="img"><div class="icon icon3"></div></div>
 						<h5>有资源的公司及个人</h5>
 					</div>
-					<div class="col-xs-6">
+					<div class="col-xs-6 r_o_n_d4 transform">
 						<div class="img"><div class="icon icon4"></div></div>
 						<h5>创业者</h5>
 					</div>
@@ -143,16 +149,16 @@
 			</div>
 		</div>
 		<div class="swiper-slide slide5">
-			<div class="img">
+			<div class="img l_o_n transform">
 				<div class="icon ewm"></div>
 			</div>
-			<h5>长按联系我们会有惊喜</h5>
-			<div class="button-box">
+			<h5 class="l_o_n_d1 transform">长按联系我们会有惊喜</h5>
+			<div class="button-box l_o_n_d2 transform">
 				<a class="button" href="#"><i class="iconfont">&#xe630;</i>在线咨询</a>
 			</div>
-			<p class="phone"><i class="iconfont">&#xe61e;</i>咨询热线：4006-035-001</p>
-			<div class="line"></div>
-			<p>除了商标还有支持域名、云主机、SSL证书、信用认证等产品第一商务是商标局授权商标代理服务机构、中华商标协会会员单位、CNNIC&ICANN认证域名注册服务机构、可信网站认证服务商。</p>
+			<p class="phone l_o_n_d3 transform"><i class="iconfont">&#xe61e;</i>咨询热线：4006-035-001</p>
+			<div class="line l_o_n_d4 transform"></div>
+			<p class="l_o_n_d5 transform">除了商标还有支持域名、云主机、SSL证书、信用认证等产品第一商务是商标局授权商标代理服务机构、中华商标协会会员单位、CNNIC&ICANN认证域名注册服务机构、可信网站认证服务商。</p>
 		</div>
 	</div>
 	<div class="swiper-pagination"></div>
@@ -163,4 +169,5 @@
 
 </body>
 </html>
+<script src="./js/common.js"></script>
 <script src="./js/index.js"></script>

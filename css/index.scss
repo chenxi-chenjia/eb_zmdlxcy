@@ -114,23 +114,79 @@ h4{
     }
     
     .icon1{
+        background-image:url(../img/star.png);
+        background-size:.9rem .87rem;
         width: .9rem;
         height: .87rem;
-        background-position:-4.71rem -0.01rem;
-        top:.5rem;
-        right:1.8rem;
     }
     .icon2{
-        background-image:url(../img/star.png);
-        background-size:cover;
+        background-image: url(../img/lstar.png);
+        background-size:.6rem .6rem;
+        width: .6rem;
+        height: .6rem;
     }
     .icon3{
-       background-image:url(../img/lstar.png);
+        width: 1.85rem;
+        height: 1.85rem;
+        background-position:-2.86rem -.01rem;
+        top:.84rem;
+        left: 0;
     }
     .icon4{
-
+        width: 1.52rem;
+        height: 1.51rem;
+        background-position:-5.61rem -.01rem;
+        top:4rem;
+        right: -.52rem;
     }
-    
+    .icon5{
+        width: 1.15rem;
+        height: .47rem;
+        background-position:-7.13rem -.01rem;
+        top:3.2rem;
+        left: -.2rem;
+    }
+    .icon6{
+        width: 1.6rem;
+        height: 1.6rem;
+        background-position:-8.34rem 0;
+        bottom:1.6rem;
+        left: .6rem;
+    }
+    .icon7{
+        width:1.71rem;
+        height: .58rem;
+        background-position:-7rem -1.6rem;
+        bottom:1.8rem;
+        right: .2rem;
+    }
+    .icon8{
+        width: .35rem;
+        height: .35rem;
+        background-image:url(../img/bstar.png);
+        background-size:.35rem .35rem;
+    }
+    .icon9{
+        width: 5.51rem;
+        height: 2.51rem;
+        background-position:-4.43rem -3.89rem;
+        top:1.61rem;
+        @include l_r_c;
+    }
+    .icon10{
+        width: 5.3rem;
+        height: 2.5rem;
+        background-position:-4.65rem -6.44rem;
+        top:4.37rem;
+        @include l_r_c;
+    }
+    .icon11{
+        width: 6.86rem;
+        height: .99rem;
+        background-position:0 -9.01rem;
+        top:7.3rem;
+        @include l_r_c;
+    }
 }
 .slide2,.slide3,.slide4,.slide5{
     padding:.32rem 0;

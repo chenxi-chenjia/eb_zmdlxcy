@@ -1,0 +1,487 @@
+// 动画
+
+//流星效果
+
+@keyframes shoot_star{
+	0% {
+		transform:translate(100px,-100px) ;
+		opacity:0;
+	}
+	50% {
+		transform: translate(0,0);
+		opacity: 1;
+	}
+	100%{
+		transform: translate(-100px,100px);
+		opacity: 0;
+	}
+}
+/* Firefox */
+@-moz-keyframes shoot_star {
+	0% {
+		transform:translate(100px,-100px) ;
+		opacity:0;
+	}
+	50% {
+		transform: translate(0,0);
+		opacity: 1;
+	}
+	100%{
+		transform: translate(-100px,100px);
+		opacity: 0;
+	}
+}
+/* Safari 和 Chrome */
+@-webkit-keyframes shoot_star {
+	0% {
+		transform:translate(100px,-100px) ;
+		opacity:0;
+	}
+	50% {
+		transform: translate(0,0);
+		opacity: 1;
+	}
+	100%{
+		transform: translate(-100px,100px);
+		opacity: 0;
+	}
+}
+/* Opera */
+@-o-keyframes shoot_star {
+	0% {
+		transform:translate(100px,-100px) ;
+		opacity:0;
+	}
+	50% {
+		transform: translate(0,0);
+		opacity: 1;
+	}
+	100%{
+		transform: translate(-100px,100px);
+		opacity: 0;
+	}
+}
+
+//星星闪烁效果
+
+
+@keyframes flicker{
+	0% {
+		opacity:0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+/* Firefox */
+@-moz-keyframes flicker {
+	0% {
+		opacity:0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+/* Safari 和 Chrome */
+@-webkit-keyframes flicker {
+	0% {
+		opacity:0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+/* Opera */
+@-o-keyframes flicker {
+	0% {
+		opacity:0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+
+
+
+
+//左入弹簧效果
+@keyframes l_spring { 
+	0%{
+		transform:translateX(500px);
+		opacity: 0;
+	}
+	70%{
+		transform: translateX(-40px);
+		opacity: 1;
+	}
+	80%{
+		transform: translateX(30px);
+	}
+	85%{
+		transform: translateX(-15px);
+	}
+	90%{
+		transform:translateX(10px);
+	}
+	93%{
+		transform: translateX(-7px);
+	}
+	95%{
+		transform: translateX(5px);
+	}
+	97%{
+		transform: translateX(-3px);
+	}
+	99%{
+		transform: translateX(1px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+
+@-moz-keyframes l_spring {
+	0%{
+		transform:translateX(500px);
+		opacity: 0;
+	}
+	70%{
+		transform: translateX(-40px);
+		opacity: 1;
+	}
+	80%{
+		transform: translateX(30px);
+	}
+	85%{
+		transform: translateX(-15px);
+	}
+	90%{
+		transform:translateX(10px);
+	}
+	93%{
+		transform: translateX(-7px);
+	}
+	95%{
+		transform: translateX(5px);
+	}
+	97%{
+		transform: translateX(-3px);
+	}
+	99%{
+		transform: translateX(1px);
+	}
+	100%{
+		transform: translateX(0);
+	} 
+}
+/* Safari 和 Chrome */
+@-webkit-keyframes l_spring {
+	0%{
+		transform:translateX(500px);
+		opacity: 0;
+	}
+	70%{
+		transform: translateX(-40px);
+		opacity: 1;
+	}
+	80%{
+		transform: translateX(30px);
+	}
+	85%{
+		transform: translateX(-15px);
+	}
+	90%{
+		transform:translateX(10px);
+	}
+	93%{
+		transform: translateX(-7px);
+	}
+	95%{
+		transform: translateX(5px);
+	}
+	97%{
+		transform: translateX(-3px);
+	}
+	99%{
+		transform: translateX(1px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+/* Opera */
+@-o-keyframes l_spring {
+	0%{
+		transform:translateX(500px);
+		opacity: 0;
+	}
+	70%{
+		transform: translateX(-40px);
+		opacity: 1;
+	}
+	80%{
+		transform: translateX(30px);
+	}
+	85%{
+		transform: translateX(-15px);
+	}
+	90%{
+		transform:translateX(10px);
+	}
+	93%{
+		transform: translateX(-7px);
+	}
+	95%{
+		transform: translateX(5px);
+	}
+	97%{
+		transform: translateX(-3px);
+	}
+	99%{
+		transform: translateX(1px);
+	}
+	100%{
+		transform: translateX(0);
+	} 
+}
+
+
+
+//右入弹簧效果
+@keyframes r_spring { 
+	0%{
+		transform:translateX(-500px);
+		opacity: 0;
+	}
+	70%{
+		transform: translateX(40px);
+		opacity: 1;
+	}
+	80%{
+		transform: translateX(-30px);
+	}
+	85%{
+		transform: translateX(15px);
+	}
+	90%{
+		transform:translateX(-10px);
+	}
+	93%{
+		transform: translateX(7px);
+	}
+	95%{
+		transform: translateX(-5px);
+	}
+	97%{
+		transform: translateX(3px);
+	}
+	99%{
+		transform: translateX(-1px);
+	}
+	100%{
+		transform: translateX(0);
+	} 
+}
+
+@-moz-keyframes r_spring {
+	0%{
+		transform:translateX(-500px);
+		opacity: 0;
+	}
+	70%{
+		transform: translateX(40px);
+		opacity: 1;
+	}
+	80%{
+		transform: translateX(-30px);
+	}
+	85%{
+		transform: translateX(15px);
+	}
+	90%{
+		transform:translateX(-10px);
+	}
+	93%{
+		transform: translateX(7px);
+	}
+	95%{
+		transform: translateX(-5px);
+	}
+	97%{
+		transform: translateX(3px);
+	}
+	99%{
+		transform: translateX(-1px);
+	}
+	100%{
+		transform: translateX(0);
+	} 
+}
+/* Safari 和 Chrome */
+@-webkit-keyframes r_spring {
+	0%{
+		transform:translateX(-500px);
+		opacity: 0;
+	}
+	70%{
+		transform: translateX(40px);
+		opacity: 1;
+	}
+	80%{
+		transform: translateX(-30px);
+	}
+	85%{
+		transform: translateX(15px);
+	}
+	90%{
+		transform:translateX(-10px);
+	}
+	93%{
+		transform: translateX(7px);
+	}
+	95%{
+		transform: translateX(-5px);
+	}
+	97%{
+		transform: translateX(3px);
+	}
+	99%{
+		transform: translateX(-1px);
+	}
+	100%{
+		transform: translateX(0);
+	} 
+}
+/* Opera */
+@-o-keyframes r_spring {
+	0%{
+		transform:translateX(-500px);
+		opacity: 0;
+	}
+	70%{
+		transform: translateX(40px);
+		opacity: 1;
+	}
+	80%{
+		transform: translateX(-30px);
+	}
+	85%{
+		transform: translateX(15px);
+	}
+	90%{
+		transform:translateX(-10px);
+	}
+	93%{
+		transform: translateX(7px);
+	}
+	95%{
+		transform: translateX(-5px);
+	}
+	97%{
+		transform: translateX(3px);
+	}
+	99%{
+		transform: translateX(-1px);
+	}
+	100%{
+		transform: translateX(0);
+	} 
+}
+//左淡入
+.animate-l_o_n{
+	animation:l_o_n .5s ease-in-out;
+}
+//右淡入
+.animate-r_o_n{
+	animation:r_o_n .5s ease-in-out;
+}
+//流星
+.animate-shoot_star{
+	animation:shoot_star 4s ease-out infinite;
+}
+// 闪烁
+.animate-flicker{
+	animation:flicker 3s ease-in-out infinite;
+}
+//左入弹簧效果
+.animate-l_spring{
+	animation:l_spring 1s ease-in-out;
+}
+//右入弹簧效果
+.animate-r_spring{
+	animation:r_spring 1s ease-in-out;
+}
+
+//左右淡入延迟
+.l_o_n{
+	opacity:0;
+	transform:translateX(-500px);
+	transition:all 1s ease-in-out;
+}
+.l_o_n_d1{
+	opacity:0;
+	transform:translateX(-500px);
+	transition:all 1s ease-in-out .2s;
+}
+.l_o_n_d2{
+	opacity:0;
+	transform:translateX(-500px);
+	transition:all 1s ease-in-out .4s;
+}
+.l_o_n_d3{
+	opacity:0;
+	transform:translateX(-500px);
+	transition:all 1s ease-in-out .6s;
+}
+.l_o_n_d4{
+	opacity:0;
+	transform:translateX(-500px);
+	transition:all 1s ease-in-out .8s;
+}
+.l_o_n_d5{
+	opacity:0;
+	transform:translateX(-500px);
+	transition:all 1s ease-in-out 1s;
+}
+.r_o_n{
+	opacity:0;
+	transform:translateX(500px);
+	transition:all 1s ease-in-out;
+}
+.r_o_n_d1{
+	opacity:0;
+	transform:translateX(500px);
+	transition:all 1s ease-in-out .2s;
+}
+.r_o_n_d2{
+	opacity:0;
+	transform:translateX(500px);
+	transition:all 1s ease-in-out .4s;
+}
+.r_o_n_d3{
+	opacity:0;
+	transform:translateX(500px);
+	transition:all 1s ease-in-out .6s;
+}
+.r_o_n_d4{
+	opacity:0;
+	transform:translateX(500px);
+	transition:all 1s ease-in-out .8s;
+}
+.translate_move{
+	opacity:1;
+	transform:translateX(0);
+}
