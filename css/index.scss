@@ -188,6 +188,11 @@ h4{
         @include l_r_c;
     }
 }
+.swiper-slide{
+    position:relative;
+    z-index: 0;
+    background:#fff;
+}
 .slide2,.slide3,.slide4,.slide5{
     padding:.32rem 0;
     position: relative;

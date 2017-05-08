@@ -25,6 +25,7 @@ var star={
 				backgroundSize:new_star_width+'px '+new_star_height+'px'
 			})
 		})
+		
 	},
 	lstar_move:function(){
 		var self =star;
@@ -45,14 +46,17 @@ var star={
 				backgroundSize:new_lstar_width+'px '+new_lstar_height+'px'
 			})
 		})
+		
 	},
 	enter_fn:function(){
+		$('.banner').find('.transform').addClass('translate_move');
 		setTimeout(this.star_move,0);
 		setTimeout(this.lstar_move,0);
 		this.star_t=setInterval(this.star_move,4000);
 		this.lstar_t=setInterval(this.lstar_move,3000);
 	},
 	leave_fn:function(){
+		$('.banner').find('.translate_move').removeClass('translate_move');
 		clearInterval(this.star_t);
 		clearInterval(this.lstar_t);
 		$('.star-box').empty();

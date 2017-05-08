@@ -29,6 +29,7 @@ var mySwiper = new Swiper('.swiper-container', {
     paginationClickable: true,
     mousewheelControl : true,
     onSlideChangeStart:function(swiper){
+    	$('.swiper-slide').css('zIndex',0).eq(swiper.activeIndex).css('zIndex',1);
     	if(swiper.activeIndex==0){
 			var f=$('.swiper-slide').eq(0);
 			f.find('.l_spring').addClass('animate-l_spring').end().find('.r_spring').addClass('animate-r_spring');
@@ -40,17 +41,18 @@ var mySwiper = new Swiper('.swiper-container', {
     	}else if(swiper.activeIndex==3){
 			$('.swiper-slide').eq(3).find('.transform').addClass('translate_move');
 			ca_flag=true;
-			setTimeout(begin_canvas,1600);
+			setTimeout(begin_canvas,1000);
 			
     	}else if(swiper.activeIndex==4){
 			$('.swiper-slide').eq(4).find('.transform').addClass('translate_move');
 			ca_flag=false;
-			setTimeout(begin_canvas,1600);
+			setTimeout(begin_canvas,1000);
 			
     	}else if(swiper.activeIndex==5){
 			$('.swiper-slide').eq(5).find('.transform').addClass('translate_move');
     	}else if(swiper.activeIndex==6){
 			$('.swiper-slide').eq(6).find('.transform').addClass('translate_move');
+			$('.swiper-slide').eq(6).find('.scale').addClass('scale_move');
     	}
     },
     onSlideChangeEnd:function(swiper){
@@ -78,6 +80,7 @@ var mySwiper = new Swiper('.swiper-container', {
     	}
     	if(swiper.activeIndex!=6){
 			$('.swiper-slide').eq(6).find('.translate_move').removeClass('translate_move');
+			$('.swiper-slide').eq(6).find('.scale_move').removeClass('scale_move');
     	}
     }
 })

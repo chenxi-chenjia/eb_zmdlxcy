@@ -400,13 +400,117 @@
 		transform: translateX(0);
 	} 
 }
+//上下浮动
+@keyframes t_b{
+	0%{
+		transform: translateY(0);
+	}
+	15.625%{
+		transform: translateY(-25px);
+	}
+	46.875%{
+		transform: translateY(25px);
+	}
+	62.5%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+/* Firefox */
+@-moz-keyframes t_b {
+	0%{
+		transform: translateY(0);
+	}
+	15.625%{
+		transform: translateY(-25px);
+	}
+	46.875%{
+		transform: translateY(25px);
+	}
+	62.5%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+/* Safari 和 Chrome */
+@-webkit-keyframes t_b {
+	0%{
+		transform: translateY(0);
+	}
+	15.625%{
+		transform: translateY(-25px);
+	}
+	46.875%{
+		transform: translateY(25px);
+	}
+	62.5%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+/* Opera */
+@-o-keyframes t_b {
+	0%{
+		transform: translateY(0);
+	}
+	15.625%{
+		transform: translateY(-25px);
+	}
+	46.875%{
+		transform: translateY(25px);
+	}
+	62.5%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+//中间放大
+.z_r_b{
+	opacity:0;
+	transform:scale(0,0);
+	transition:all 1s ease-in-out ;
+}
+// 上下浮动
+.animate-t_b{
+	animation:t_b 8s ease ;
+	animation-iteration-count:2;
+}
+
+//标题上淡入
+.t_o_n{
+	opacity:0;
+	transform:translateY(-500px);
+	transition:all .5s ease-in-out;
+}
 //左淡入
 .animate-l_o_n{
 	animation:l_o_n .5s ease-in-out;
 }
 //右淡入
-.animate-r_o_n{
-	animation:r_o_n .5s ease-in-out;
+.r_o_n1{
+	opacity:0;
+	transform:translateX(100%);
+	transition:all 3s ease-in-out;
+}
+.r_o_n2{
+	opacity:0;
+	transform:translateX(150%);
+	transition:all 3s ease-in-out;
+}
+//下淡入
+.b_o_n{
+	opacity:0;
+	transform:translateY(500px);
+	transition:all 1s ease-in-out;
 }
 //流星
 .animate-shoot_star{
@@ -484,4 +588,8 @@
 .translate_move{
 	opacity:1;
 	transform:translateX(0);
+}
+.scale_move{
+	opacity: 1;
+	transform:scale(1,1);
 }
