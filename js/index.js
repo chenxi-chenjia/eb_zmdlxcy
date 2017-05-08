@@ -41,12 +41,12 @@ var mySwiper = new Swiper('.swiper-container', {
     	}else if(swiper.activeIndex==3){
 			$('.swiper-slide').eq(3).find('.transform').addClass('translate_move');
 			ca_flag=true;
-			setTimeout(begin_canvas,1000);
+			setTimeout(begin_canvas,1600);
 			
     	}else if(swiper.activeIndex==4){
 			$('.swiper-slide').eq(4).find('.transform').addClass('translate_move');
 			ca_flag=false;
-			setTimeout(begin_canvas,1000);
+			setTimeout(begin_canvas,1600);
 			
     	}else if(swiper.activeIndex==5){
 			$('.swiper-slide').eq(5).find('.transform').addClass('translate_move');
