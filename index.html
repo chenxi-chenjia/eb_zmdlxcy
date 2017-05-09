@@ -24,7 +24,20 @@
 	<script src="./js/swiper-3.4.2.jquery.min.js"></script>
 	<link rel="stylesheet" href="./css/animate.css">
 	<link rel="stylesheet" href="./css/index.css">
-
+	<script type="text/javascript">
+		var system ={ };
+		var p = navigator.platform;
+		system.win = p.indexOf("Win") == 0;
+		system.mac = p.indexOf("Mac") == 0;
+		system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+		if(system.win||system.mac||system.xll){ 
+		//如果是电脑跳转到百度
+			 window.location.href="./pc_index.html";
+		}else{  
+		//如果是手机,跳转到谷歌
+		 
+		}
+  	</script>
 </head>
 <body>
 
@@ -125,10 +138,10 @@
 		<div class="swiper-slide slide4">
 			<div class="container">
 				<div class="row">
-					<h2 class="col-xs-12 t_o_n transform"><span><i class="icon icon-h2-left"></i>面向群体<i class="icon icon-h2-right"></i></span></h2>
+					<h2 class="col-xs-12  transform"><span><i class="icon icon-h2-left"></i>面向群体<i class="icon icon-h2-right"></i></span></h2>
 				</div>
 				<div class="row">
-					<div class="col-xs-6 l_o_n_d1 transform">
+					<div class="col-xs-6  l_o_n_d1 transform">
 						<div class="img"><div class="icon icon1"></div></div>
 						<h5>商标代理人</h5>
 					</div>
@@ -156,7 +169,7 @@
 			<div class="button-box ">
 				<a class="button" href="#"><i class="iconfont">&#xe630;</i>在线咨询</a>
 			</div>
-			<p class="phone"><i class="iconfont">&#xe61e;</i>咨询热线：4006-035-001</p>
+			<p class="phone"><i class="iconfont">&#xe61e;</i>咨询热线：<a href="tel:4006-035-001">4006-035-001</a></p>
 			<div class="line"></div>
 			<p class="b_o_n transform">除了商标还有支持域名、云主机、SSL证书、信用认证等产品第一商务是商标局授权商标代理服务机构、中华商标协会会员单位、CNNIC&ICANN认证域名注册服务机构、可信网站认证服务商。</p>
 		</div>

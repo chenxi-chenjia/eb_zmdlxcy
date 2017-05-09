@@ -1,5 +1,4 @@
 //星星函数
-
 var star={
 	banner_width:$('.banner').width(),
 	banner_height:$('.banner').height(),
@@ -74,7 +73,7 @@ var star={
 //canvas 动画
 function cas(fa,color,percent){
 	var obj=fa.getElementsByTagName('canvas')[0];
-	var wh=obj.clientWidth;
+	var wh=$(fa).width();
 	obj.width=wh;
 	obj.height=wh;
 	var zb=wh/2;
@@ -118,7 +117,7 @@ function cas(fa,color,percent){
 }
 
 //banner 动画初始化
-	star.enter_fn();
+star.enter_fn();
 
 function over_cas(fa){
 	var obj=fa.getElementsByTagName('canvas')[0];
