@@ -14,8 +14,8 @@ var star={
 		$('.star-box').find('.icon').each(function(){
 			var star_X=Math.random()*self.banner_width;
 			var star_Y=Math.random()*self.banner_height;
-			var new_star_width=Math.random()*2*self.star_width;
-			var new_star_height=self.new_star_width*9/8.7;
+			var new_star_width=Math.random()*self.star_width;
+			var new_star_height=new_star_width*9/8.7;
 			$(this).css({
 				width:new_star_width+'px',
 				height:new_star_height+'px',
@@ -35,7 +35,7 @@ var star={
 		$('.lstar-box').find('.icon').each(function(){
 			var lstar_X=Math.random()*self.banner_width;
 			var lstar_Y=Math.random()*self.banner_height;
-			var new_lstar_width=Math.random()*2*self.lster_width;
+			var new_lstar_width=Math.random()*self.lster_width;
 			var new_lstar_height=new_lstar_width*9/8.7;
 			$(this).css({
 				width:new_lstar_width+'px',

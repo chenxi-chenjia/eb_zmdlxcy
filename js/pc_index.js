@@ -53,9 +53,6 @@ $(window).scroll(function(){
 			}
 		}
 	})
-	$('.container').eq(trans_index).find('.transform').addClass('transform-move');
-	
-	
 })
 
 $('.wyxq .check-box').on('click','span',function(){
@@ -68,27 +65,22 @@ $('.wyxq .check-box').on('click','span',function(){
 // 楼层动画效果
 function floor_animate(i){
 	if(i==0){
-		$('.banner-bottom-font').find('.animate').removeClass('animate').end();
-		$('.banner-bottom-font').find('p:first').addClass('zoomInLeft').addClass('animated');
-		$('.banner-bottom-font').find('p:last').addClass('zoomInRight').addClass('animated');
+		
 	}else if(i==1){
 		$('.wmdcp').find('.animate').removeClass('animate').end().find('h2').addClass('fadeInDown').addClass('animated');
-		$('.wmdcp .row:first').find('.col-xs-12:first').find('div.img').addClass('rotateInDownLeft').addClass('animated').end().find('div.font-box').addClass('rotateInUpLeft').addClass('animated');
-		$('.wmdcp .row:first').find('.col-xs-12:last').find('div.img').addClass('rotateInDownRight').addClass('animated').end().find('div.font-box').addClass('rotateInUpRight').addClass('animated');
+		$('.wmdcp .row').find('.col-xs-12').addClass('rotateInDownLeft').addClass('animated');
 	}else if(i==2){
-		$('.hzms').find('.animate').removeClass('animate').end().find('.zz-font').addClass('rollIn').addClass('animated');
-		$('.hzms').find('h2').addClass('fadeInDown').addClass('animated').end().find('h3').addClass('lightSpeedIn').addClass('animated').end().find('.pl').addClass('flipInX').addClass('animated').end().find('.canvas').addClass('flip').addClass('animated');
+		$('.hzms').find('.animate').removeClass('animate').end().find('.zz-font').addClass('zoomIn').addClass('animated');
+		$('.hzms').find('h2').addClass('fadeInDown').addClass('animated').end().find('h3').addClass('lightSpeedIn').addClass('animated').end().find('.pl').addClass('fadeInRight').addClass('animated').end().find('.canvas').addClass('zoomIn').addClass('animated');
 			if(canvas_flag){
-				setTimeout(r_canvas_move,3000);
-				setTimeout(b_canvas_move,4500);
+				setTimeout(r_canvas_move,1750);
+				setTimeout(b_canvas_move,2000);
 				canvas_flag=false;
 			}
 	}else if(i==4){
-		$('.mxqt').find('.animate').removeClass('animate').end().find('h2').addClass('fadeInDown').addClass('animated').end().find('.col-xs-6').eq(0).addClass('fadeInLeft').addClass('animated').end().eq(1).addClass('fadeInDown').addClass('animated').end().eq(2).addClass('fadeInUp').addClass('animated').end().eq(3).addClass('fadeInRight').addClass('animated');
+		$('.mxqt').find('.animate').removeClass('animate').end().find('h2').addClass('fadeInDown').addClass('animated').end().find('.col-xs-6').addClass('fadeInUp').addClass('animated');
 	}else if(i==5){
-		$('.wyxq').find('.animate').removeClass('animate').end().find('h2').addClass('fadeInDown').addClass('animated').end().find('.check-box').addClass('zoomInDown').addClass('animated').end().find('.input-box').eq(0).addClass('zoomInLeft').addClass('animated').end().eq(1).addClass('zoomInRight').addClass('animated').end().eq(2).addClass('zoomInLeft').addClass('animated').end().eq(3).addClass('zoomInRight').addClass('animated').end().end().find('.button-box').find('a').eq(0).addClass('rotateInUpLeft').addClass('animated').end().eq(1).addClass('rotateInUpRight').addClass('animated');
-	}else if(i==6){
-		$('footer').find('.animate').removeClass('animate').end().find('.img-box').addClass('rollIn').addClass('animated').end().find('.col-xs-12:last').addClass('flipInY').addClass('animated');
+		$('footer').find('.animate').removeClass('animate').end().find('.img-box').addClass('zoomIn').addClass('animated').end().find('.col-xs-12:last').addClass('slideInUp').addClass('animated');
 	}
 }
 

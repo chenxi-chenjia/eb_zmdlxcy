@@ -114,8 +114,8 @@ h2{
 			position: absolute;
 			z-index: 0;
 			background-position:0 0;
-			width: 90px;
-			height: 96px;
+			width: 106px;
+			height: 106px;
 			background-image:url(../img/pc_star.png);
 		}
 	}
@@ -162,16 +162,8 @@ h2{
 			background-position:-78px -211px;
 		}
 	}
-	.font-box{
-		animation-delay:.5s;
-	}
 	.col-xs-12:last-of-type{
-		.img{
-			animation-delay:.5s;
-		}
-		.font-box{
-			animation-delay:0s;
-		}
+		animation-delay:.5s;
 	}
 	h4{
 		margin-top: 30px;
@@ -188,9 +180,6 @@ h2{
 	}
 }
 .hzms{
-	h2{
-		animation-delay:.5s;
-	}
 	.zz-font{
 		padding-top:30px;
 		h4,p{
@@ -258,24 +247,24 @@ h2{
 	}
 	.col-xs-12:first-child{
 		h3{
-			animation-delay:1s;
+			animation-delay:.25s;
 		}
 		.pl{
-			animation-delay:1.5s;
+			animation-delay:.5s;
 		}
 		.canvas{
-			animation-delay:2s;
+			animation-delay:.75s;
 		}
 	}
 	.col-xs-12:last-of-type{
 		h3{
-			animation-delay:2.5s;
+			animation-delay:1s;
 		}
 		.pl{
-			animation-delay:3s;
+			animation-delay:1.25s;
 		}
 		.canvas{
-			animation-delay:3.5s;
+			animation-delay:1.5s;
 		}
 	}
 }
@@ -314,134 +303,131 @@ h2{
 		height: 94px;
 		background-position: 0 -19px;
 	}
-	.col-xs-6:nth-child(1){
-		animation-delay:.5s
-	}
 	.col-xs-6:nth-child(2){
-		animation-delay:1.5s
+		animation-delay:0.25s
 	}
 	.col-xs-6:nth-child(3){
-		animation-delay:2s
+		animation-delay:.5s
 	}
 	.col-xs-6:nth-child(4){
-		animation-delay:2.5s
+		animation-delay:.75s
 	}
 }
-.wyxq{
-	.equal-width{
-		margin:14px auto;
-		max-width: 502px;
-	}
-	.check-box{
-		animation-delay:.5s;
-		span:first-child{
-			margin-right:54px;
-		}
-		span{
-			font-size: 16px;
-			color:#666;
-			padding-left:36px;
-			position: relative;
-			cursor: pointer;
-			&:after{
-				content: '';
-				border-radius:50%;
-				height: 20px;
-				width: 20px;
-				border:1px solid #e4e4e4;
-				left: 0;
-				@include t_b_c;
-			}
-		}
-		.checked{
-			&:after{
-				border-color:#f00909;
-			}
-			&:before{
-				content: '';
-				left: 7px;
-				width: 6px;
-				height: 6px;
-				background: #f00909;
-				border-radius:50%;
-				@include t_b_c;
-			}
-		}
-	}
-	.input-box{
-		height: 58px;
-		border-left :4px solid #f00909;
-		border-radius:4px;
-		box-shadow:0 0 10px rgba(0,0,0,0.1);
-		line-height: 58px;
-		padding-left: 105px;
-		position: relative;
-		font-size: 16px;
-		span{
-			padding-left: 24px;
-			color:#999;
-			position:absolute;
-			@include t_b_c;
-			left: 0;
-		}
-		input{
-			width: 100%;
-			height: 100%;
-			padding:0 10px;
-			color:#444;
-			border:0;
-			outline: none;
-		}
-	}
-	.button-box{
-		text-align: center;
-		.btn{
-			width: 234px;
-			height: 58px;
-			border-radius:4px;
-			box-shadow: 0 0 10px rgba(0,0,0,0.1);
-			padding:0;
-			line-height: 58px;
-			font-size: 18px;
-			margin :15px 0;
-		}
-		.send{
-			border:1px solid #ddd;
-			color:#444;
-			animation-delay:3s;
-		}
-		.lianxi{
-			color:#fff;
-			background:#43a4ff;
-			animation-delay:3s;
-			.iconfont{
-				font-size: 24px;
-				color:#fff;
-				padding-right: 10px;
-			}
-		}
-	}
-	.col-xs-12:nth-child(2){
-		.input-box{
-			animation-delay:1s;
-		}
-	}
-	.col-xs-12:nth-child(3){
-		.input-box{
-			animation-delay:1.5s;
-		}
-	}
-	.col-xs-12:nth-child(4){
-		.input-box{
-			animation-delay:2s;
-		}
-	}
-	.col-xs-12:nth-child(5){
-		.input-box{
-			animation-delay:2.5s;
-		}
-	}
-}
+// .wyxq{
+// 	.equal-width{
+// 		margin:14px auto;
+// 		max-width: 502px;
+// 	}
+// 	.check-box{
+// 		animation-delay:.25s;
+// 		span:first-child{
+// 			margin-right:54px;
+// 		}
+// 		span{
+// 			font-size: 16px;
+// 			color:#666;
+// 			padding-left:36px;
+// 			position: relative;
+// 			cursor: pointer;
+// 			&:after{
+// 				content: '';
+// 				border-radius:50%;
+// 				height: 20px;
+// 				width: 20px;
+// 				border:1px solid #e4e4e4;
+// 				left: 0;
+// 				@include t_b_c;
+// 			}
+// 		}
+// 		.checked{
+// 			&:after{
+// 				border-color:#f00909;
+// 			}
+// 			&:before{
+// 				content: '';
+// 				left: 7px;
+// 				width: 6px;
+// 				height: 6px;
+// 				background: #f00909;
+// 				border-radius:50%;
+// 				@include t_b_c;
+// 			}
+// 		}
+// 	}
+// 	.input-box{
+// 		height: 58px;
+// 		border-left :4px solid #f00909;
+// 		border-radius:4px;
+// 		box-shadow:0 0 10px rgba(0,0,0,0.1);
+// 		line-height: 58px;
+// 		padding-left: 105px;
+// 		position: relative;
+// 		font-size: 16px;
+// 		span{
+// 			padding-left: 24px;
+// 			color:#999;
+// 			position:absolute;
+// 			@include t_b_c;
+// 			left: 0;
+// 		}
+// 		input{
+// 			width: 100%;
+// 			height: 100%;
+// 			padding:0 10px;
+// 			color:#444;
+// 			border:0;
+// 			outline: none;
+// 		}
+// 	}
+// 	.button-box{
+// 		text-align: center;
+// 		.btn{
+// 			width: 234px;
+// 			height: 58px;
+// 			border-radius:4px;
+// 			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+// 			padding:0;
+// 			line-height: 58px;
+// 			font-size: 18px;
+// 			margin :15px 0;
+// 		}
+// 		.send{
+// 			border:1px solid #ddd;
+// 			color:#444;
+// 			animation-delay:1.25s;
+// 		}
+// 		.lianxi{
+// 			color:#fff;
+// 			background:#43a4ff;
+// 			animation-delay:1.25s;
+// 			.iconfont{
+// 				font-size: 24px;
+// 				color:#fff;
+// 				padding-right: 10px;
+// 			}
+// 		}
+// 	}
+// 	.col-xs-12:nth-child(2){
+// 		.input-box{
+// 			animation-delay:.25s;
+// 		}
+// 	}
+// 	.col-xs-12:nth-child(3){
+// 		.input-box{
+// 			animation-delay:.5s;
+// 		}
+// 	}
+// 	.col-xs-12:nth-child(4){
+// 		.input-box{
+// 			animation-delay:.75s;
+// 		}
+// 	}
+// 	.col-xs-12:nth-child(5){
+// 		.input-box{
+// 			animation-delay:1s;
+// 		}
+// 	}
+// }
 footer{
 	margin-top:66px;
 	background:#2c343d;
@@ -459,7 +445,28 @@ footer{
 			font-size: 18px;
 			text-align: center;
 			padding-top:17px;
-			padding-bottom:38px;
+			padding-bottom:17px;
+		}
+		a.button{
+			text-align: center;
+			display: block;
+			width: 234px;
+			height: 58px;
+			border-radius:4px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+			padding:0;
+			line-height: 58px;
+			font-size: 18px;
+			margin :15px auto;
+			color:#fff;
+			background:#43a4ff;
+			animation-delay:1.25s;
+			margin-bottom: 50px;
+			.iconfont{
+				font-size: 24px;
+				color:#fff;
+				padding-right: 10px;
+			}
 		}
 		.line{
 			width: 30px;
