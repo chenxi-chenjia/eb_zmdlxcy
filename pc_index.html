@@ -11,6 +11,18 @@
 	<link rel="stylesheet" href="./css/animate.min.css">
 	<link rel="stylesheet" href="./css/pc_index.css">
 	<link rel="stylesheet" href="./css/animate.css">
+	<script type="text/javascript">
+		var system ={ };
+		var p = navigator.platform;
+		system.win = p.indexOf("Win") == 0;
+		system.mac = p.indexOf("Mac") == 0;
+		system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+		if(system.win||system.mac||system.xll){ 
+			 
+		}else{  
+			 window.location.href="./index.html";
+		}
+  	</script>
 </head>
 <body>
 	<div class="banner">
